@@ -8,7 +8,7 @@
   <h1>Factorial Calculator</h1>
   <h3>Enter a number to find factorial</h3>
   <input type="number" id="numberInput" placeholder="Enter a number">
-  <button onclick="factorial()">Calculate</button>
+  <button onclick="calculateFactorial()">Calculate</button>
 
   <p id="result"></p>
 
@@ -19,7 +19,7 @@
       return n * factorial(n - 1);
     }
 
-      factorial() {
+      calculateFactorial() {
       const input = document.getElementById("numberInput").value;
       const num = parseInt(input);
 
@@ -34,4 +34,5 @@
   </script>
 
 </body>
+
 </html>
